@@ -6,8 +6,19 @@ Governance | Consensus | Cryptography | Data structure | Tokensupply | Programma
 Private / Permissionless | Proof of work | SHA-256 | Merkle tree | finite | simple conditions
 Public / Permissioned | Proof of stake | RSA | UTXO database | infinte | smart contracts
 Hybrid | Proof of burn | elliptic curve | ICO |
-... | ... | ... | pre mining |
-... | ... | ... | open mining |
+... | Proof of acticity | ... | pre mining |
+... | Proof of capacity | ... | open mining |
+... | Proof of elapsed time (intel) | ... | open mining |
+
+Governance | Bitcoin Core | Ethereum | Monero | Sia | Tendermint | BigchainDB 
+------------ | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
+Governance | distributed | Vitalik Buterin / Classic | ... | ... | ... | ... 
+Consensus | PoW | PoW -> PoS | PoW | ... | PoS | ...
+Cryptography | Elliptic Curve & SHA256 | ... | Zero Knowledge | ... | ... | ...
+Data structure | UTXO database | ... | ... | ... | ... | ...
+Tokensupply | 21 mio | infinite | ... | ...| ... | ...
+Programmable Transactions | simple conditions | smart contracts | ... | ... | ... | ...
+Blocktime |10 min| 20 sec | 1 min | ... | ... | ... |
 
 
 ## uncategorized
