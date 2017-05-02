@@ -1,5 +1,5 @@
 # Blockchain-Cluster
-Categorization of Blockchain Frameworks / Applications
+Categorization of Blockchain Frameworks
 
 Governance | Consensus | Cryptography | Data structure | Tokensupply | Programmable Transactions
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Hybrid | Proof of burn | elliptic curve | ICO |
 ... | Proof of capacity | ... | open mining |
 ... | Proof of elapsed time (intel) | ... | open mining |
 
-Governance | Bitcoin Core | Ethereum | Monero | Sia | Tendermint | BigchainDB 
+Characteristics | Bitcoin Core | Ethereum | Monero | Sia | Tendermint | BigchainDB 
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
 Governance | distributed | Vitalik Buterin / Classic | ... | ... | ... | ... 
 Consensus | PoW | PoW -> PoS | PoW | ... | PoS | ...
@@ -20,6 +20,8 @@ Tokensupply | 21 mio | infinite | ... | ...| ... | ...
 Programmable Transactions | simple conditions | smart contracts | ... | ... | ... | ...
 Blocktime |10 min| 20 sec | 1 min | ... | ... | ... |
 
+Categorization of Blockchain Applications
+...
 
 ## uncategorized
 private blockchain, public blockchain, proof of stake, proof of work, bft, blockless, decentralized, consensus, mining, nodes, smart contracts, ICO, Hash, Mempool, Merkle root, Seed, Token, 
