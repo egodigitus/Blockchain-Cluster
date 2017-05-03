@@ -1,5 +1,5 @@
 # Blockchain-Cluster
-Categorization of Blockchain Frameworks
+# Characteristics of Blockchain Frameworks
 
 Governance | Consensus | Cryptography | Data structure | Tokensupply | Programmable Transactions | Usage
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
@@ -10,6 +10,7 @@ Hybrid | Proof of burn | elliptic curve | ICO |...|...| external data|
 ... | Proof of capacity | ... | open mining |...|...|payments
 ... | Proof of elapsed time (intel) | ... | open mining |
 
+# Categorization of Blockchain Frameworks
 Characteristics | Bitcoin Core | Ethereum | Monero | Sia | Tendermint | BigchainDB 
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
 **Usage** | payment | computation | payment | file storage | cross-blockchain communication | file storage
@@ -21,11 +22,11 @@ Characteristics | Bitcoin Core | Ethereum | Monero | Sia | Tendermint | Bigchain
 **Programmable Transactions** | simple conditions | smart contracts | ... | ... | ... | ...
 **Blocktime** |10 min| 20 sec | 1 min | ... | ... | ... |
 
-Categorization of Blockchain Applications
-...
+# Categorization of Blockchain Applications
+Augur, Gnosis, Steemit, Counterparty
 
 ## uncategorized
-private blockchain, public blockchain, proof of stake, proof of work, bft, blockless, decentralized, consensus, mining, nodes, smart contracts, ICO, Hash, Mempool, Merkle root, Seed, Token, computation, file storage, external data, monetization, and payments.
+private blockchain, public blockchain, bft, blockless, decentralized, mining, nodes, Hash, Mempool, Merkle root, Seed,
 
 ### properties
-persistence, data exchange/data synchronization, immutability, permissioned/permissionless, proof of.., availability, block time, throughput, anonymity/pseudonymity, trustlessness, node operator, smart contracts, intregrated payment processes, currency, (near) real time
+persistence, data exchange/data synchronization, immutability, availability, throughput, anonymity/pseudonymity, trustlessness, node operator, intregrated payment processes, currency, (near) real time
