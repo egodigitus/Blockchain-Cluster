@@ -5,12 +5,13 @@ Governance | Consensus | Hash | Signatures | Data structure | Tokensupply | Prog
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
 Private / Permissionless | Proof of work | SHA-256 | ed25519 | Merkle tree | finite | simple conditions | computation
 Public / Permissioned | Proof of stake | SHA-512 | ring | UTXO database | infinte | smart contracts | file storage
-Hybrid | Proof of burn | blake2b | secp256k1 | ICO |...|...| external data|
-Foundation | Proof of acticity | ... | pre mining |...|...|monetization|
-... | Proof of capacity | ... | open mining |...|...|payments
-... | Proof of elapsed time (PoET) | ... | open mining |
+Hybrid | Proof of burn | blake2b | secp256k1 | ICO |...|...| external data
+Foundation | Proof of acticity | ... | ... | pre mining |...|...|monetization
+... | Proof of capacity | ... | ... | open mining |...|...|payments
+... | Proof of elapsed time (PoET) | ... | ... | open mining | ... | ... |
 
 # Categorization of Blockchain Frameworks
+
 Characteristics | Usage | Governance | Consensus | Hash | Signature | Structure | Tokensupply | Transaction | Blocktime |
 ---------- | ----- | --------- | ----- | ------ | ------ | ------- | ------- | ------- | ------ | -------
 Bitcoin Core | payment | distributed | PoW | SHA2-256 and RIPEMD160 | ... | UTXO database | 21 mio | simple conditions | 10 min
