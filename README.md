@@ -12,8 +12,8 @@ Foundation | Proof of acticity | ... | ... | pre mining |...|...|monetization
 
 # Categorization of Blockchain Frameworks
 
-Characteristics | Usage | Governance | Consensus | Hash | Signature | Structure | Tokensupply | Transaction | Blocktime |
----------- | ----- | --------- | ----- | ------ | ------ | ------- | ------- | ------- | ------ | -------
+Characteristics | Usage | Governance | Consensus | Hash | Signature | Structure | Tokensupply | Transaction | Blocktime
+------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ 
 Bitcoin Core | payment | distributed | PoW | SHA2-256 and RIPEMD160 | ... | UTXO database | 21 mio | simple conditions | 10 min
 Stellar | payment | Foundation | Stellar Consensus Protocol (federated Byzantine agreement) | SHA256 | ed25519 | ... | 100 bil lumens | ... | ...
 Monero | payment | ... | PoW | ZK | ring (CryptoNote) | ... | ... | 1 min | ...
