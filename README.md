@@ -19,11 +19,11 @@ distributed					| bPFT							| ...			| ...			| ...				| ...			| ...						| suppl
 
 # Categorization of Blockchain Frameworks
 
-Characteristics / Frameworks 	| Usage 									| Governance 			| Consensus 													| Hash 							| Signature 		| Structure 		| Tokensupply 		| Feature 		| Blocktime
------------- 					| ------------								| ------------ 			| ------------ 													| ------------ 					| ------------ 		| ------------ 		| ------------ 		| ------------ 		| ------------ 
-Bitcoin Core 					| payment 									| decentralized 			| PoW sha256															| SHA2-256 and RIPEMD160 		| ECDSA 				| UTXO key/value db 	| 21 mio 			| script lang. Turing complete? | 10 min
-Stellar 						| payment 									| Foundation 			| Stellar Consensus Protocol (federated Byzantine agreement) 	| SHA256 						| ed25519 			| ... 				| 100 bil lumens 	| ... 				| ...
-Monero 							| anonymous payment 									| decentralized 					| PoW CryptoNight															| ZK 							| ring (CryptoNote) | UTXO. LMDB 				| Unlimited. Tail Emission: 0.6 XMR/Block 				| Stealth Address. Dynamic Blocksize 				| 2 min
+Characteristics / Frameworks 	| Usage 									| Governance 			| Consensus 													| Hashfunction for Address 							| Transaction Signature 		| Structure 		| Tokensupply 		| Feature 		| Blocktime | Key Generation
+------------ 					| ------------								| ------------ 			| ------------ 													| ------------ 					| ------------ 		| ------------ 		| ------------ 		| ------------ 		| ------------      | ------------
+Bitcoin Core 					| payment 									| decentralized 			| PoW (SHA-256)															| SHA-256 and RIPEMD160 		| ECDSA 				| UTXO key/value db 	| 21 mio 			| script lang. Turing complete? | 10 min    | Elliptic curve secp256k1
+Stellar 						| payment 									| Foundation 			| Stellar Consensus Protocol (federated Byzantine agreement) 	| SHA256 						| ed25519 			| ledger 				| 100 bil lumens 	| Issue Tokens 				| ~4 sec
+Monero 							| anonymous payment 									| decentralized 					| PoW CryptoNight															| Keccak-256 							| ring signature(CryptoNote) | UTXO. LMDB 				| Unlimited. Tail Emission: 0.6 XMR/Block 				| Default Stealth Addresses. Dynamic Blocksize. RingCT. Kovri(i2p) 				| 2 min | EdDSA ed25519 
 Zcash 							| payment 									| Foundation 			| PoW (equihash) 												| zk-SNARKs black 				| ... 				| ... 				| 21 mio 			| ... 				| 150 sec
 Ethereum 						| computation 								| Foundation / Classic 	| PoW -> PoS (Casper) 											| ? / Keccak-256 				| ... 				| ... 	| ... 				| smart contracts 				| 20 sec
 Sia 							| file storage 								| ... 					| PoW 															| blake2b 						| ed25519, entropy 	| ... 				| Unlimited. ca.2% inflation 				| ... 				| 10 min
