@@ -1,5 +1,5 @@
 # Blockchain-Cluster
-# Characteristics of Blockchain Frameworks
+# Characteristics of Blockchain Protocols
 
 Governance 					| Consensus 					| Hash 			| Signatures 	| Data structure 	| Tokensupply 	| Programmable Transactions | Usage
 ------------ 				| ------------- 				| ------------- | ------------- | ------------- 	| ------------- | ------------- 			| -------------
@@ -17,25 +17,22 @@ distributed					| bPFT							| ...			| ...			| ...				| ...			| ...						| suppl
 ...							| ...							| ...			| ...			| ...				| ...			| ...						| governance
 ...							| ...							| ...			| ...			| ...				| ...			| ...						| identity
 
-# Categorization of Blockchain Frameworks
+# Categorization of Blockchain Protocols
 
-Characteristics / Frameworks 	| Usage 									| Governance 			| Consensus 													| Hashfunction for Address 							| Transaction Signature 		| Structure 		| Tokensupply 		| Feature 		| Blocktime | Key Generation / Derivation? Function
------------- 					| ------------								| ------------ 			| ------------ 													| ------------ 					| ------------ 		| ------------ 		| ------------ 		| ------------ 		| ------------      | ------------
-Bitcoin Core 					| payment 									| decentralized 			| PoW (SHA-256)															| SHA-256 and RIPEMD160 		| ECDSA 				| UTXO key/value db 	| 21 mio 			| script lang. Turing complete? | 10 min    | Elliptic curve secp256k1
-Stellar 						| payment 									| Foundation 			| Stellar Consensus Protocol (federated Byzantine agreement) 	| SHA256 						| ed25519 			| ledger 				| 100 bil lumens 	| Issue Tokens 				| ~4 sec
-Monero 							| anonymous payment 									| decentralized 					| PoW CryptoNight															| Keccak-256 							| ring signature(CryptoNote) | UTXO. LMDB 				| Unlimited. Tail Emission: 0.6 XMR/Block 				| Default Stealth Addresses. Dynamic Blocksize. RingCT. Kovri(i2p) 				| 2 min | EdDSA ed25519 
-Zcash 							| anonymous payment 									| Foundation 			| PoW (equihash) 												| zk-SNARKs black 				| BLAKE2b-256				| treestate (commitment tree + nullifier set) 				| 21 mio 			| Viewing key. 				| 150 sec
-Ethereum 						| computation 								| Foundation / Classic 	| PoW -> PoS (Casper) 											| ? / Keccak-256 				| ... 				| ... 	| Unlimited.  				| smart contracts 				| 20 sec
-Sia 							| file storage 								| ... 					| PoW 															| blake2b 						| ed25519, entropy 	| ... 				| Unlimited. ca.2% inflation 				| ... 				| 10 min
-BigchainDB 						| file storage 								| ... 					| PoS															| SHA3-256 						| ed25519 			| ... 				| No native token 				| ... 				| ...
-Tendermint 						| cross-blockchain communication 			| ... 					| Byzantine Consensus Algorithm 								| SHA256 						| ed25519 			| ... 				| ... 				| ... 				| ...
-Mediachain 						| media 									| open-source (Spotify) | RAFT (federated) 												| ... 							| ... 				| ... 				| ... 				| ... 				| ...
-Hyperledger Fabric 				| ... 										| Linux 				| Batch Practical Byzantine Fault Tolerance (bPBFT) 			| SHA256 						| ... 				| ... 				| ... 				| ... 				| ...
-Hyperledger Sawtooth Lake 		| supply chain, securitization, settlement 	| Linux 				| Proof-of-Elapsed-Time (PoET) 									| SHA512 						| secp256k1 		| ... 				| ... 				| ... 				| ...
-Chain 							| assets 									| incorporated 			| Federated 													| ... 							| ... 				| ... 				| ... 				| ... 				| ...
-ꜩ (Tezos) 						| governance 								| ... 					| PoS 															| ... 							| ... 				| ... 				| ... 				| ... 				| ...
-Blockstack 						| identity 									| ... 					| ... 															| ... 							| ... 				| ... 				| ... 				| ... 				| ...
-Monax 							| ... 										| ... 					| ... 															| ... 							| ... 				| ... 				| ... 				| ... 				| ...
+|                        | Bitcoin                  | Ethereum                | Hyperledger Fabric     | IOTA                          | Monero                    | Zcash                   | Stellar                 | Tendermint             | Chain | Tezos | Sia     | BigchainDB      | Mediachain |
+|------------------------|--------------------------|-------------------------|------------------------|-------------------------------|---------------------------|-------------------------|-------------------------|------------------------|-------|-------|---------|-----------------|------------|
+| Consensus Algorithm    | Proof-of-work SHA-256    | Proof-of-work ethhash   | Ordering  Service      | Tip selection MCMC            | Proof-of-work CryptoNight | Proof-of-work equihash  | Stellar Consensus       | BFT                    |       |       | PoW     | PoS             |            |
+| Node  Authentification | No BIP 150 & 151         | Yes RLPx                | X.509                  | Mutual tethering              |                           |                         |                         |                        |       |       |         |                 |            |
+| Governance             | decentralized            | Ethreum Foundation      | IBM & Linux Foundation | IOTA Foundation               | decentralized             | Zcash Foundation        | Foundation              |                        |       |       |         |                 |            |
+| Transparency           | public &  permissionless | public & permissionless | private & permissioned | public & permissionless       | public & permissionless   | public & permissionless | public & permissionless | private & permissioned |       |       |         |                 |            |
+| Data structure         | UTXO                     | Merkle Patricia Tree    | NoSQL DB               | Directed  Acyclic Graph       | UTXO LMDB                 | Treestate               |                         |                        |       |       |         |                 |            |
+| Blocktime              | 10 min                   | ~ 30 sec                | adjustable             | No blocks                     | 2 min                     | 150 sec                 |                         |                        |       |       |         |                 |            |
+| Coinsupply             | 21 mio BTC               | Unlimited ETH           | No generic coin        | ((3^33-1)/2) IOTA             | Unlimited XMR             | 21 mio                  | 100 bil lumen           |                        |       |       |         | No generic coin |            |
+| Tokens                 | Via script               | Via smart contract      | Via chaincode          | No                            |                           |                         | Yes                     |                        |       |       |         |                 |            |
+| Chaincode              | Bitcoin script           | Ethereum bytecode       | Chaincode              | No                            |                           |                         |                         |                        |       |       |         |                 |            |
+| Key Generation         | secp256k1                | secp256k1               | PKI X.509              | Kerl Ternary Keccak384        | ed25519                   |                         | secp256k1               |                        |       |       |         |                 |            |
+| Address  Generation    | RIPEMD160 & SHA-256      | SHA3                    | PKI X.509              |                               | Keccak256                 | zk-SNARKs black         | SHA-256                 | SHA-256                |       |       | blake2b | SHA3-256        |            |
+| Transaction Signature  | ECDSA                    | ECDSA                   | PKI X.509              | Hash-based One-time Signature | ring signature            | BLAKE2b-256             | ed25519                 | ed25519                |       |       | ed25519 | ed25519         |            |
 
 
 # Categorization of Blockchain Applications
