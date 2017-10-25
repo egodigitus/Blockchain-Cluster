@@ -1,7 +1,53 @@
 # Blockchain-Cluster
+
+The idea of this categorization is to make different blockchain protocols comparable and to identify protocol attack vectors.
+This categorization shall be seen as a first step towards a mature security blockchain research.
+Further details can be found in the associated thesis "Clustering Blockchain Protocols with Regards to Security Testing" from Tim Menapace.
+
+Feel free to add new blockchain protocols or to enhance the categorization scheme by itself.
+//tim
+# Categories of Blockchain Design
+A blockchain design is defined as the compound of the three design primitives transaction design, consensus design & block design.
+![](images/Blockchain_Design.png?raw=true)
+
+Each Design primitive has several subcategories, described in the following tables:
+
+## Transaction Design
+| Category                  | Description of the category. For each blockchain protocol a category can have different values. |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Chaincode                  | Code that is deployed into the blockchain inside a transaction and  processed by every node in the network. Especially non-standard  transaction code that is capable to enforce some kind of business logic. |
+| Transaction Cryptography   | How does the protocol ensure confidentiality, integrity,  non-repudiation and authentication of transactions?                                                                                                 |
+| -- Key Generation           | The cryptographic algorithm that generates the public/private key pair.                                                                                                                                       |
+| -- Address    Generation    | The algorithm that generates the wallet address from the public key.                                                                                                                                          |
+| -- Transaction    Signature | The algorithm that uses the public/private key pair to sign a transaction  broadcasted to the network.                                                                                                        |
+
+## Consensus Design
+| Category                  | Description of the category. For each blockchain protocol a category can have different values. |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Consensus Algorithm        | The algorithm that lets the nodes in the network eventually come to  one state. Depending on the number of malicious processes  consensus is possible, see section \ref{BFT}.                                 |
+| Node Authentication        | How does a node authenticate itself to its peers in the network?                                                                                                                                              |
+| Governance                 | How is the codebase of the Reference Implementation developed  and who is leading this development?                                                                                                           |
+| Transparency               | Who got what kind of permissions on the network?                                                                                                                                                              |
+| -- public                     | Everybody can read                                                                                                                                                                                            |
+| -- private                    | Selected nodes can read                                                                                                                                                                                       |
+| -- permissionless             | Everybody can write                                                                                                                                                                                           |
+| -- permissioned               | Selected nodes can write                                                                                                                                                                                      |
+
+## Data structure & Block Design
+| Category                  | Description of the category. For each blockchain protocol a category can have different values. |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Data structure             | How is the data of the blockchain stored in the nodes?                                                                                                                                                        |
+| Blocktime                  | The average time between two blocks.                                                                                                                                                                          |
+| Tokens                     | Can users generate their own coin-like tokens?                                                                                                                                                                |
+| Coin supply                | Is there a generic coin in the system? How is it supplied?  Incentive to generatenew blocks?                                                                                                                  |
+
 # Characteristics of Blockchain Protocols
 
-Governance 					| Consensus 					| Hash 			| Signatures 	| Data structure 	| Tokensupply 	| Programmable Transactions | Usage
+Each subcategory can have different values.
+The following table is an ongoing collection of different values / characteristics for blockchain design.
+
+
+Governance 	& Transparency				| Consensus 					| Hash 			| Signatures 	| Data structure 	| Tokensupply 	| Programmable Transactions | Usage
 ------------ 				| ------------- 				| ------------- | ------------- | ------------- 	| ------------- | ------------- 			| -------------
 Private / Permissionless 	| Proof of work 				| SHA-256 		| ed25519 		| Merkle tree 		| finite (int)	| simple conditions 		| computation
 Public / Permissioned 		| Proof of stake 				| SHA-512 		| ring 			| UTXO database 	| infinte 		| smart contracts 			| file storage
