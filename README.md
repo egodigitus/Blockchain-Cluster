@@ -47,21 +47,20 @@ Each subcategory can have different values.
 The following table is an ongoing collection of different values / characteristics for blockchain design.
 
 
-Governance 	& Transparency				| Consensus 					| Hash 			| Signatures 	| Data structure 	| Tokensupply 	| Programmable Transactions | Usage
------------- 				| ------------- 				| ------------- | ------------- | ------------- 	| ------------- | ------------- 			| -------------
-Private / Permissionless 	| Proof of work 				| SHA-256 		| ed25519 		| Merkle tree 		| finite (int)	| simple conditions 		| computation
-Public / Permissioned 		| Proof of stake 				| SHA-512 		| ring 			| UTXO database 	| infinte 		| smart contracts 			| file storage
-Hybrid 						| Proof of burn 				| SHA3-256		| secp256k1 	| ... 				| ICO			| ...						| external data
-Foundation 					| Proof of acticity 			| zk-SNARKs		| ... 			| ... 				| pre mining	| ...						| monetization
-Linux 						| Proof of capacity 			| blake2b  		| ... 			| ... 				| open mining	| ...						| payments
-incorporated 				| Proof of elapsed time (PoET) 	| Keccak-256 	| ... 			| ... 				| ... 			| ... 						| cross-blockchain communication
-...							| Byzantine Consensus Algorithm	| RIPEMD160		| ...			| ...				| ...			| ...						| media
-distributed					| bPFT							| ...			| ...			| ...				| ...			| ...						| supply chain
-...							| Stellar Consensus Protocol	| ...			| ...			| ...				| ...			| ...						| securitization
-...							| RAFT							| ...			| ...			| ...				| ...			| ...						| settlement
-...							| Federated						| ...			| ...			| ...				| ...			| ...						| assets
-...							| ...							| ...			| ...			| ...				| ...			| ...						| governance
-...							| ...							| ...			| ...			| ...				| ...			| ...						| identity
+| Consensus Algorithm        | Node  Authentification | Governance    | Transparency  | Data structure         | Blocktime  | Coinsupply      | Tokens        | Key  Generation | Address Generation | Transaction Signature     |   | Usage                          |   |
+|----------------------------|------------------------|---------------|---------------|------------------------|------------|-----------------|---------------|-----------------|--------------------|---------------------------|---|--------------------------------|---|
+| Proof of work              | No                     | decentralized | public        | UTXO                   | fixed time | fixed amount    | Via chaincode | ECC             | RIPEM160 & SHA256  | ECDSA -ed25519 -secp256k1 |   | computation                    |   |
+| Proof of stake             | RLPx                   | Foundation    | permissonless | Merkle Patricia Tree   | adjustable | unlimited       | No Tokens     | PKI X.509       | SHA3               | PKI X.509                 |   | file storage                   |   |
+| Proof of burn              | X.509                  | incorporated  | private       | NoSQL DB               | No blocks  | no generic coin |               | Kerl            | PKI X.509          | Hash-based OTS            |   | external data                  |   |
+| Proof of activity          | Mutual tethering       |               | permissioned  | Directed Acyclic Graph |            |                 |               |                 | Kerl               | ring                      |   | monetization                   |   |
+| Proof of capacity          |                        |               |               | Treestate              |            |                 |               |                 |                    |                           |   | payments                       |   |
+| Proof of elapsed time      |                        |               |               |                        |            |                 |               |                 |                    |                           |   | cross-blockchain communication |   |
+| pBFT                       |                        |               |               |                        |            |                 |               |                 |                    |                           |   | media                          |   |
+| Stellar Consensus Protocol |                        |               |               |                        |            |                 |               |                 |                    |                           |   | supply chain                   |   |
+| RAFT                       |                        |               |               |                        |            |                 |               |                 |                    |                           |   | securitization                 |   |
+| Federated                  |                        |               |               |                        |            |                 |               |                 |                    |                           |   | settlement                     |   |
+|                            |                        |               |               |                        |            |                 |               |                 |                    |                           |   | assets                         |   |
+|                            |                        |               |               |                        |            |                 |               |                 |                    |                           |   | governance                     |   |
 
 # Categorization of Blockchain Protocols
 
@@ -82,10 +81,10 @@ distributed					| bPFT							| ...			| ...			| ...				| ...			| ...						| suppl
 
 
 # Categorization of Blockchain Applications
-Augur, Gnosis, Steemit, Counterparty
+Augur, Gnosis, Steemit, Counterparty <- To Do
 
 ## uncategorized
-private blockchain, public blockchain, bft, blockless, decentralized, mining, nodes, Hash, Mempool, Merkle root, Seed,
+bft, mining, nodes, Hash, Mempool, Merkle root, Seed,
 
 ### properties
 persistence, data exchange/data synchronization, immutability, availability, throughput, anonymity/pseudonymity, trustlessness, node operator, intregrated payment processes, currency, (near) real time
