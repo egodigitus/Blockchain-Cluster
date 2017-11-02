@@ -2,7 +2,7 @@
 
 The idea of this categorization is to make different blockchain protocols comparable and to identify protocol attack vectors.
 This categorization shall be seen as a first step towards a mature security blockchain research.
-Further details can be found in the associated thesis "Clustering Blockchain Protocols with Regards to Security Testing" from Tim Menapace.
+Further details can be found in the associated thesis "Clustering Blockchain Protocols with Regards to Security Testing" from Tim Menapace. https://www.academia.edu/34955919/Clustering_Blockchain_Protocols_With_Regards_To_Security_Testing 
 
 Feel free to add new blockchain protocols or to enhance the categorization scheme by itself.
 //tim
